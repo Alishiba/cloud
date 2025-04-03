@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Generator</title>
+    <script>
+        function generateText() {
+            const texts = ["Hello, World!", "Welcome to Text Generator!", "Enjoy coding!", "Have a great day!"];
+            const randomText = texts[Math.floor(Math.random() * texts.length)];
+            document.getElementById("output").innerText = randomText;
+        }
+    </script>
+</head>
+<body>
+    <h2>Simple Text Generator</h2>
+    <button onclick="generateText()">Generate Text</button>
+    <p id="output"></p>
+</body>
+</html>
